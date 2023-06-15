@@ -1,0 +1,21 @@
+:root {
+  --soft-blue: 215, 51%, 70%;
+  --cyan: 178, 100%, 50%;
+  --very-dark-blue-main: 217, 54%, 11%;
+  --very-dark-blue-card: 216, 50%, 16%;
+  --very-dark-blue-line: 215, 32%, 27%;
+  --white: 0, 0%, 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--very-dark-blue-main));
+  color: hsl(var(--white));
+  font-family: "Outfit Variable", sans-serif;
+  font-size: 1.125rem;
+}

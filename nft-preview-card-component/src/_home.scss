@@ -1,0 +1,99 @@
+.card {
+  width: 22rem;
+  padding: 1.5rem;
+  background-color: hsl(var(--very-dark-blue-card));
+  border-radius: 0.75rem;
+
+  &__img-container {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover > .card__img-overlay {
+      opacity: 1;
+    }
+  }
+
+  &__img-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(var(--cyan), 0.5);
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+  }
+
+  &__title {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 150ms ease-in;
+
+    &:hover {
+      color: hsl(var(--cyan));
+    }
+  }
+
+  &__subtitle {
+    color: hsl(var(--soft-blue));
+    font-weight: 300;
+  }
+
+  &__stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  &__money {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(var(--cyan));
+    font-weight: 600;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: hsl(var(--soft-blue));
+  }
+
+  &__separator {
+    height: 0.1rem;
+    margin: 1rem 0;
+    background-color: hsl(var(--very-dark-blue-line));
+  }
+
+  &__profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: hsl(var(--soft-blue));
+  }
+
+  &__avatar {
+    width: 2.25rem;
+    aspect-ratio: 1;
+    border: 1px solid #fff;
+    border-radius: 9999px;
+  }
+
+  &__author {
+    font-weight: 400;
+    color: hsl(var(--white));
+    cursor: pointer;
+    transition: color 150ms ease-in;
+
+    &:hover {
+      color: hsl(var(--cyan));
+    }
+  }
+}
