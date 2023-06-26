@@ -2,11 +2,21 @@
   padding: 1.5rem;
   padding-bottom: 2rem;
   background-color: hsl(var(--white));
+
+  @media (min-width: 1440px) {
+    max-width: 500px;
+    padding: 4rem;
+    border-radius: 2rem;
+  }
 }
 
 .body {
   padding-top: 8rem;
   padding-bottom: 15rem;
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
 }
 
 .title {
@@ -15,6 +25,10 @@
   font-size: 2.5rem;
   line-height: 1;
   color: hsl(var(--dark-slate-grey));
+
+  @media (min-width: 1440px) {
+    font-size: 3.5rem;
+  }
 }
 
 .email {
