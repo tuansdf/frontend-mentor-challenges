@@ -13,16 +13,26 @@
 }
 
 .title {
-  margin: 0;
+  margin-bottom: 1rem;
   color: hsl(var(--dark-slate-grey));
   font-size: 2.5rem;
 }
 
 .list {
   margin-top: 1.5rem;
+  padding-left: 0;
+  list-style: none;
 
   & > * + * {
     margin-top: 0.75rem;
+  }
+
+  & > li {
+    padding-left: 2.25rem;
+    background-image: url("/images/icon-list.svg");
+    background-position: 0 0;
+    background-size: 1.4rem 1.4rem;
+    background-repeat: no-repeat;
   }
 }
 
