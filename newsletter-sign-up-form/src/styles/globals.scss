@@ -17,6 +17,7 @@ body {
   max-width: 375px;
   margin-inline: auto;
   width: 100%;
+  background-color: hsl(var(--charcoal-grey));
   font-size: 1rem;
 
   @media (min-width: 1440px) {
