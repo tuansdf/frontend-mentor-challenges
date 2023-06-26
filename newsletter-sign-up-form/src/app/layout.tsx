@@ -3,8 +3,8 @@ import { primaryFont } from "~/app/fonts";
 import "~/styles/index.scss";
 
 export const metadata = {
-  title: "Next Site",
-  description: "Next Site",
+  title: "Newsletter sign-up form - Frontend Mentor - Tuan Nguyen",
+  description: "Newsletter sign-up form - Frontend Mentor - Tuan Nguyen",
 };
 
 type Props = PropsWithChildren;
