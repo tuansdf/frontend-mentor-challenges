@@ -13,11 +13,19 @@ export default function Home() {
   return (
     <>
       <main className={classes["main"]}>
-        <img
-          src="/images/illustration-sign-up-mobile.svg"
-          alt=""
-          className={classes["image"]}
-        />
+        <picture className={classes["picture"]}>
+          <source
+            srcSet="/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 1440px)"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/images/illustration-sign-up-mobile.svg"
+            alt=""
+            className={classes["image"]}
+          />
+        </picture>
 
         <div className={classes["body"]}>
           <h1 className={classes["title"]}>Stay updated!</h1>
