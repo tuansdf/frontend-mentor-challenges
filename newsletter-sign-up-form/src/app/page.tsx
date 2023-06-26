@@ -1,7 +1,15 @@
 import { Attribution } from "~/components/attribution";
 import classes from "./page.module.scss";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  const handleSubmit = async (formData: FormData) => {
+    "use server";
+
+    const email = formData.get("email");
+    redirect(`/thanks?email=${email}`);
+  };
+
   return (
     <>
       <main className={classes["main"]}>
@@ -22,9 +30,14 @@ export default function Home() {
             <li>And much more!</li>
           </ul>
 
-          <form className={classes["form"]}>
+          <form className={classes["form"]} action={handleSubmit}>
             <label>Email address</label>
-            <input type="email" placeholder="email@company.com" />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="email@company.com"
+            />
             <button>Subscribe to monthly newsletter</button>
           </form>
         </div>
